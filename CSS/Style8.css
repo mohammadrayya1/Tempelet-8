@@ -1,0 +1,443 @@
+:root
+{
+--min-color :#FF9800;
+}
+
+
+body
+{
+    height: 7000px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container
+{
+    width: 1170px;
+    margin: auto;
+    overflow: hidden;
+}
+.setting-box
+{
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: white;
+    z-index: 3;
+    transition: 0.3s all;
+}
+
+ .open
+{
+    left: -200px;
+}
+.option
+{
+    text-align: center;
+    background-color: #EEE;
+    margin: 5px;
+    height: 130px;
+    padding-top: 5px;
+}
+.setting-box .g1
+{
+    position: absolute;
+    right: -40px;
+    top:150px;
+    width: 40px;
+    height: 35px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+;
+}
+.setting-container .colors
+{
+    list-style: none;
+    padding-left: 0px;
+}
+.setting-container .colors li
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.setting-container .colors li:first-child
+{
+background-color: #FF9800;
+}
+.setting-container .colors li:nth-child(2)
+{
+    background-color: red;
+}
+.setting-container .colors li:nth-child(3)
+{
+    background-color: blue;
+}
+.setting-container .colors li:nth-child(4)
+{
+    background-color:yellow ;
+}
+.setting-container .colors li:nth-child(5)
+{
+    background-color:green ;
+}
+
+
+
+.setting-container .backgroundRandom
+{
+    text-align: center;
+    background-color: #EEE;
+    margin: 5px;
+    height: 100px;
+    padding-top: 5px;
+}
+.setting-container .backgroundRandom .btn-background-yes,
+.setting-container .backgroundRandom .btn-background-no
+{
+
+    display: inline-block;
+    height: 20px;
+    width: 50px;
+    background-color:#009688;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  
+}
+.close
+{
+    opacity: 0.5;
+}
+.landign-page
+{
+min-height: 100vh;
+width: 100%;
+background-image: url(../images/B1.png);
+position: relative;
+background-size: cover;
+}
+
+.landign-page .overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 , 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.header-area
+{
+
+position: relative;
+z-index: 2;
+display: flex;
+flex-wrap: nowrap;
+padding-top:40px;
+color: white;
+}
+
+.header-area .logo
+{
+padding-left: 30px;
+width: 500px;
+font-weight: bold;
+
+}
+
+
+.header-area .link
+{
+
+    list-style: none;
+    text-align: right;
+    width: 100%;
+    padding-right: 5px;
+    margin-top: 0;
+    padding-left: 0;
+}
+.header-area .link li
+{
+    display: inline-block;
+    margin-left: 15px;
+
+}
+.header-area .link li a
+{
+    text-decoration: none;
+    color: white;
+}
+.header-area .link li a:hover,
+.header-area .link li a.active
+{
+    color: var(--min-color);
+}
+
+.landign-page .introduction-text
+{
+   
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.introduction-text h1
+{
+     font-size: 34px;
+     margin: 0 0 15px;
+}
+
+.introduction-text h1 span
+{
+    color: var(--min-color);
+}
+.introduction-text p
+{
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0px;
+}
+
+
+/*======================== About Us ===================*/
+
+.about-us
+{
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 500px;
+
+
+}
+.about-us .about-info
+{
+width: 50%;
+height: 100%;
+padding: 30px;
+padding-right: 100px;
+
+}
+.about-us .about-info h1
+{
+    color: var(--min-color);
+}
+.about-us .about-info p
+{
+    line-height: 25px;
+    color: #777777;
+}
+.about-us .about-imag
+{
+    width: 50%;
+    height: 100%;
+
+}
+.about-us .about-imag img
+{
+    width: 500px;
+}
+
+
+
+/*=====================Our Skills================*/
+
+
+.our-skill
+{
+    width: 100%;
+    height: 700px;
+    padding-top: 100px;
+    background-color: #EEE;
+
+}
+
+.our-skill .skill-title
+{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: #EEE
+   
+    ;
+}
+
+.our-skill .skill-title h1
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--min-color);
+}
+
+.our-skill .skill-title p
+{
+    line-height: 25px;
+    color: #777777;
+}
+
+.our-skill .skill-Info
+{
+width: 100%;
+height: 400px;
+}
+
+.our-skill .skill-Info .s1
+{
+    display: flex;
+    height: 50px;
+    background-color: white;
+    padding-top: 15px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.our-skill .skill-Info .s1 .skill-name
+{
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.our-skill .skill-Info .s1 .skill-procecce
+{
+    width: 100%;
+    height: 40px;
+    background-color: #DDD;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.our-skill .skill-Info .s1 .skill-procecce .s2
+{
+    background-color: var(--min-color);
+    display: block;
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.5s all ease-in;
+
+}
+
+.our-skill .skill-Info .s1 .skill-procecce .openn
+{
+    width:50%;
+}
+
+
+
+/* =========================== Gallary=================*/
+
+
+
+
+.gallary
+{
+
+width: 100%;
+height: 600px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+
+.gallary h1
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--min-color); 
+    text-align: center;
+    margin-bottom: 60px;
+}
+.gallary .imag-box
+{
+    width: 100%;
+    height: 100%;
+}
+.gallary .imag-box img
+{
+    width: 183px;
+    padding: 3px;
+background-color: #F6F6F6;
+border: 1px solid #ccc;
+cursor: pointer;
+}
+
+.popup-overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+
+.popup-box
+{
+
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 500px;
+height: 450px;
+background-color: white;
+
+z-index: 1002;
+padding-left:5px;
+}
+
+.popup-box img
+{
+    width: 95%;
+    height: 85%;
+    margin-top: -18px;
+    border: 10px solid white;
+}
+.itemClose
+{
+    color:white;
+    font-size: 15px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 100000;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #009688;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+   text-align: center;
+ 
+}
+.title1
+{
+    text-align: center;
+    color: var(--min-color);
+    font-size: 20px;
+}
+
+
