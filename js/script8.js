@@ -4,15 +4,11 @@ let colorBackgroundLanding=localStorage.getItem('backgroun-landing');
 let backgroundlandfromstoreg=localStorage.getItem('backgroundstoreg');
 
 
-
 if(colorBackgroundLanding)
 {
   
     document.documentElement.style.setProperty('--min-color',colorBackgroundLanding);
 }
-
-
-
 
 var link=document.querySelectorAll('.link li a');
 
@@ -31,6 +27,16 @@ items.onclick=function()
       link[x].classList.remove('active');
     }
     items.classList.add('active');
+
+    let bul=items.dataset.name;
+  
+    let bultclass=document.querySelector(`.${bul}`);
+   
+    let bulto=bultclass.offsetTop;
+
+  
+   
+window.scrollTo({ top: bulto, behavior: 'smooth' });
 
 };
 
@@ -75,6 +81,7 @@ itemscolor.forEach(function(items)
        document.documentElement.style.setProperty('--min-color',items.dataset.color);
        localStorage.setItem('backgroun-landing',items.dataset.color);
 
+      
 
     }
 })
@@ -278,5 +285,106 @@ document.body.removeChild(popupBox);
 
 
 });
+
+
+
+
+let bult=document.querySelectorAll('.nav--bulits .bullet');
+
+
+
+
+
+bult.forEach((items)=>
+{
+    items.addEventListener('click',()=>
+{
+
+    let bul=items.dataset.name;
+    let bultclass=document.querySelector(`.${bul}`);
+   
+    let bulto=bultclass.offsetTop;
+
+  
+   
+window.scrollTo({ top: bulto, behavior: 'smooth' });
+
+});
+    
+})
+
+let btnBultYes=document.querySelector('.TestOPtion .btn-TestOPtion-yes');
+let btnBultNo=document.querySelector('.TestOPtion .btn-TestOPtion-no');
+let NavBult=document.querySelector('.nav--bulits');
+let bultstatus="true";
+
+
+
+let localbultstatus=localStorage.getItem('showBUlt');
+
+
+function show1()
+{
+    btnBultYes.classList.add('close');
+    btnBultNo.classList.remove('close');
+    NavBult.classList.add('show');  
+}
+
+function hidden()
+{
+    btnBultNo.classList.add('close');
+    btnBultYes.classList.remove('close');
+    NavBult.classList.remove('show'); 
+}
+
+
+if(localbultstatus== bultstatus)
+{
+    show1(); 
+}
+else
+{
+   
+
+   hidden(); 
+}
+
+
+btnBultYes.addEventListener('click',()=>
+{
+show1();
+
+bultstatus="true";
+localStorage.setItem('showBUlt',bultstatus);
+
+});
+
+btnBultNo.addEventListener('click',()=>
+{
+hidden();
+bultstatus="false"; 
+localStorage.setItem('showBUlt',bultstatus);
+
+});
+
+let reset=document.querySelector('.reset-btn');
+
+
+
+reset.addEventListener('click',()=>
+{
+
+localStorage.removeItem('showBUlt');
+localStorage.removeItem('backgroun-landing');
+localStorage.removeItem('backgroundstoreg');
+window.location.reload();
+
+});
+
+
+
+
+
+
 
 
