@@ -428,7 +428,6 @@ height: 400px;
 {
 
 width: 100%;
-height: 500px;
 padding-top: 100px;
 padding-bottom: 50px;
 }
@@ -449,7 +448,7 @@ padding-bottom: 50px;
 }
 .gallary .imag-box img
 {
-    width: 183px;
+    width: 178px;
     padding: 3px;
 background-color: #F6F6F6;
 border: 1px solid #ccc;
@@ -834,3 +833,347 @@ line-height: 0px;
     border-radius: 50% ;
     margin-left: 10px;
 }
+
+
+/* ==================Contact==============*/
+.contact
+{
+    background-image: url('../images/map.png');
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.contact .overlays-contact
+{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.contact .container
+{
+    position: relative;
+    z-index: 2;
+}
+
+.contact h2
+{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 60px;
+    color: var(--min-color);
+}
+
+.contact form 
+{
+
+overflow: hidden;
+max-width: 800px;
+margin: auto;
+
+}
+.contact form .left
+{
+    width: 48%;
+    float: left;
+
+}
+.contact form .right
+{float: right;
+    width: 48%;
+}
+.contact form input:not([type="submit"]),
+.contact form textarea
+{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border :1px solid #CCC;
+    background-color: rgba(218, 218, 218, 0.9);
+}
+
+.contact form input:not([type="submit"]):focus,
+.contact form textarea:focus
+{
+    outline: 1px solid var(--min-color);
+}
+.contact form input:not([type="submit"]):focus::-webkit-input-placeholder
+{
+    opacity: 0;
+    transition: 0.5; 
+}
+.contact form textarea:focus::-webkit-input-placeholder
+{
+opacity: 0;
+transition: 0.5;
+}
+
+.contact form input
+{
+    height: 30px;
+}
+
+.contact form input[type="submit"]
+{
+
+    width: 100%;
+    padding: 10px;
+    border-color: transparent;
+    background-color: var(--min-color);
+    color: white;
+    cursor: pointer;
+    height: 50px;
+}
+
+
+.contact form textarea
+{
+    height: 154px;
+}
+
+
+.menue
+{
+position: absolute;
+top: 10px ;
+right: 10px;
+width: 50px;
+height: 30px;
+color: white;
+z-index: 55;
+display: none;
+}
+
+
+.menue i
+{
+    font-size: 30px;
+    color: white
+}
+
+
+footer
+{
+    background-color: #333;
+    color: #EEE;
+    padding: 15px;
+    text-align: center;
+}
+/*============================================================= Grid System=================================================== */
+
+/*===============================  567=====================*/
+ 
+@media(-width:576px)
+{
+    
+
+.container
+{
+    max-width: 540px;
+}
+.header-area .link
+{
+    padding-right: 0px;
+    margin-top: 0;
+    padding-left: 0px;
+    text-align: right;
+    width: 100%;
+} 
+.header-area .logo {
+    padding-left: 30px;
+    width: 390px;
+    font-weight: bold;
+}
+
+
+.about-us .about-imag img {
+    width: 337px;
+    margin-top: 15px;
+}
+
+.gallary .imag-box {
+   
+    text-align: center;
+
+}
+
+.featur .icon-items {
+  
+    justify-content: center;
+
+}
+.testmonials .container .monials-box .items-box-mon {
+    width: 30%;
+}
+
+
+
+.testmonials .container .monials-box .items-box-mon .content-box {
+   
+    width: 54%;
+
+
+}
+.testmonials .container .monials-box .items-box-mon .content-box p {
+   
+    font-size: 9px;
+    padding-left: 0;
+    line-height: 18px;
+}}
+
+
+
+
+
+/*===========================768========================*/
+
+@media(max-width:768px)
+{
+
+    .testmonials .container .monials-box .items-box-mon {
+        width: 30%;
+    }
+    
+    
+    
+    .testmonials .container .monials-box .items-box-mon .content-box {
+       
+        width: 54%;
+    
+    
+    }
+    .testmonials .container .monials-box .items-box-mon .content-box p {
+       
+        font-size: 9px;
+        padding-left: 0;
+        line-height: 18px;
+    }
+    
+  
+    .about-us .about-imag img {
+        width: 349px;
+        margin-right: 70px;
+    }
+
+
+
+
+    .featur .icon-items {
+       
+        padding-left: 17%;
+        
+    }
+    .gallary .imag-box {
+       
+        text-align: center;
+    }
+.menue
+{
+position: absolute;
+top: 32px ;
+right: 10px;
+width: 50px;
+height: 30px;
+color: tomato;
+z-index: 55;
+display: block;
+}
+.menue.ros::after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    border-style:solid ;
+    border-width: 10px;
+    border-color: transparent transparent white transparent;
+    left: 3px;
+    top:28px
+}
+
+
+.header-area
+{
+    position: absolute;
+   
+}
+.header-area .link
+{
+    
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 12px;
+    z-index:56;
+    margin-top: 30px;
+    padding: 10px 0 0 0;
+    text-align: left;
+    width: 700px;
+    height: 200px;
+    background-color: white;
+    border-radius: 4px;
+
+}
+
+.header-area .show1
+{
+    
+    display: none;
+    
+
+}
+
+
+.header-area .link li
+{
+    display: block;
+    margin-bottom: 10px;
+
+}
+.header-area .link li a
+{
+color: var(--min-color);
+font-size: 20px;
+font-size: bold;
+
+}
+
+
+.container
+{
+    max-width: 720px;
+}
+
+}
+
+
+
+
+@media(min-width:992px)
+{
+.container
+{
+    max-width: 800px;
+}
+
+}
+@media(min-width:1200px)
+{
+.container
+{
+    max-width: 1140px;
+}
+
+} 
+
+
+

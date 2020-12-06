@@ -181,10 +181,7 @@ btnNo.addEventListener('click',()=>
 
 
 
-/*  
-our skills
-*/
-
+/*  our skills */
 
 
 
@@ -217,8 +214,6 @@ else if(pageYOffset<our.offsetTop)
 }
 
 }
-
-
 
 
 /*===============Gallary============*/
@@ -286,15 +281,7 @@ document.body.removeChild(popupBox);
 
 });
 
-
-
-
 let bult=document.querySelectorAll('.nav--bulits .bullet');
-
-
-
-
-
 bult.forEach((items)=>
 {
     items.addEventListener('click',()=>
@@ -381,7 +368,21 @@ window.location.reload();
 
 });
 
+window.addEventListener('keydown',()=>
+{
+console.log("kkokokokok");
 
+});
+
+
+let btnmenue=document.querySelector('.menue');
+let linkmenue=document.querySelector('.header-area .show1');
+
+btnmenue.addEventListener('click',()=>
+{
+linkmenue.classList.toggle('show1');
+btnmenue.classList.toggle('ros');
+});
 
 
 
